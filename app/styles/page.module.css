@@ -25,7 +25,7 @@
 /* ------------------------------------------------------- */
 .NavContent {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 143px auto;
   width: 90%;
   color: #c7c7c7;

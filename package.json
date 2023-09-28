@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "emailjs": "^4.0.3",
+    "gh-pages": "^6.0.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
