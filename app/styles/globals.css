@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-family: Glancyr_Regular;
+}
+
+/* ------------------------------------------------------------------------------------ */
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------------------------------------------------------ */
+h2 {
+  font-family: Glancyr_ExtraLight;
+  color: #cacaca;
+}
+
+span,
+p {
+  font-family: Glancyr_ExtraLight;
+  color: #bdbcbc;
+}
+
+/* ------------------------------------------------------------------------------------ */
+button {
+  border: 2px solid #bcbcbc;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bcbcbc;
+}
+
+/* ------------------------------------------------------------------------------------ */
+select option {
+  font-size: 20px;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #DEDFDE;
+  border-radius: 5px;
+  transition-duration: .3s;
+
+}
+
+#checkbox:checked+.toggle .bars {
+  margin-left: 13px;
+}
+
+#checkbox:checked+.toggle #bar2 {
+  transform: rotate(135deg);
+  margin-left: 0;
+  transform-origin: center;
+  transition-duration: .3s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+  transform: rotate(45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+
+#checkbox:checked+.toggle #bar3 {
+  transform: rotate(-45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+/* ------------------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Glancyr_Light';
+  src: url('../../public/Fonts/Glancyr-Light.otf');
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: 'Glancyr_ExtraLight';
+  src: url('../../public/Fonts/Glancyr-ExtraLight.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glancyr_Regular';
+  src: url('../../public/Fonts/Glancyr-Regular.otf');
+  font-weight: 900;
+  font-style: normal;
+}
